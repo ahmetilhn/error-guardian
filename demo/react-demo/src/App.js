@@ -3,12 +3,16 @@ import logo from "./logo.svg";
 import "./App.css";
 import ErrorGuardian from "error-guardian";
 function App() {
-  const errorGuardian = new ErrorGuardian();
+  const errorGuardian = new ErrorGuardian({ isWriteConsole: true });
   const handleError = () => {
-    throw new Error("Test Error");
+    try {
+      throw new Error("Test Error");
+    } catch (err) {
+      throw err;
+    }
   };
   useEffect(() => {
-    errorGuardian.init();
+    errorGuardian.init((errObj) => console.log(errObj));
   }, []);
   return (
     <div className="App">

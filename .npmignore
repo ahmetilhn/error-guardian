@@ -1,0 +1,9 @@
+node_modules
+lib
+demo
+.gitignore
+webpack.config.js
+yarn.lock
+
+.DS_Store
+package-lock.json
