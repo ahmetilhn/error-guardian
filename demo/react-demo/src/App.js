@@ -5,14 +5,11 @@ import ErrorGuardian from "error-guardian";
 function App() {
   const errorGuardian = new ErrorGuardian({ isWriteConsole: true });
   const handleError = () => {
-    try {
-      throw new Error("Test Error");
-    } catch (err) {
-      throw err;
-    }
+    const fakeString = null;
+    fakeString.toString();
   };
   useEffect(() => {
-    errorGuardian.init((errObj) => console.log(errObj));
+    errorGuardian.init();
   }, []);
   return (
     <div className="App">

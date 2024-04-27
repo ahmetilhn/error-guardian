@@ -1,6 +1,6 @@
 # Error Guardian 🪲
 
-Error Guardian is a JavaScript class that listens to and handles errors occurring in the browser, allowing you to take necessary actions. It returns to you the errors it has made in detail. Send the processed error to a remote error server (sentry, graylog, etc.). 💪🏼
+Error Guardian is a JavaScript module that listens to and handles errors occurring in the browser, allowing you to take necessary actions. It returns to you the errors it has made in detail. Send the processed error to a remote error server (sentry, graylog, etc.). 💪🏼
 
 ## Example Error Object
 
@@ -62,4 +62,4 @@ const errorGuardian = new ErrorGuardian({
 });
 ```
 
-_crated by Ahmet ilhan_
+_created by Ahmet ilhan_
