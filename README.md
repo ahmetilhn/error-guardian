@@ -22,6 +22,10 @@ Error Guardian is a JavaScript module that listens to and handles errors occurri
 }
 ```
 
+#### Console Result Image
+
+![alt text](./assets/console-demo.png)
+
 ## Installation
 
 To add ErrorGuardian to your project, follow these steps:
@@ -50,6 +54,14 @@ const parsedErrObj = {
   stack: "Error: Test Error\n    at handleError ...",
   ....
 }
+```
+
+## Error Layer
+
+All captured errors during a session are kept in window.errorLayer. 🗳️
+
+```javascript
+window.errorLayer; // []
 ```
 
 ## Configuration

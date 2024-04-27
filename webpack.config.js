@@ -8,7 +8,7 @@ module.exports = {
     rules: [
       {
         test: /\.(?:js|mjs|cjs)$/,
-        exclude: [/node_modules/, /demo/, /build/],
+        exclude: [/node_modules/, /demo/, /build/, /assets/],
         use: {
           loader: "babel-loader",
           options: {
