@@ -1,10 +1,19 @@
 {
   "name": "error-guardian",
   "version": "1.0.0-alpha",
-  "description": "Error middleware for javascript.",
+  "description": "Error middleware for javascript. Catch all errors and push your error host and parse it.",
   "main": "build/index.js",
   "repository": "git@github.com:ahmetilhn/error-guardian.git",
   "author": "Ahmet İlhan <ahmetilhan.dev@gmail.com>",
+  "keywords": [
+    "error",
+    "guardian",
+    "error handling",
+    "browser",
+    "JavaScript",
+    "listener",
+    "error listener"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "webpack",
